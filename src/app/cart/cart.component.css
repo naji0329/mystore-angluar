@@ -1,0 +1,14 @@
+.cart {
+    line-height: 32px;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    padding-right: 8px;
+}
+.cart-image-container img {
+    width: 32px;
+    height: 32px;
+}
+.total {
+    padding-right: 12px;
+    font-weight: bolder;
+}
