@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { StoreCartService } from '../service/store-cart.service';
 import { Product } from '../model/product';
 import * as _ from 'lodash';
+import { ProductSharedService } from '../service/product-shared-service';
 
 @Component({
   selector: 'app-cart',
@@ -11,7 +12,7 @@ import * as _ from 'lodash';
 export class CartComponent implements OnInit {
   products: Product[] = [];
   cartSum: number = 0;
-  constructor(private storeCartService: StoreCartService) { }
+  constructor(private storeCartService: StoreCartService, private productSharedService: ProductSharedService) { }
 
   ngOnInit() {
     console.log('initializing cart component');
@@ -19,4 +20,7 @@ export class CartComponent implements OnInit {
     this.cartSum = _.sumBy(this.products, 'attributes.price');
   }
 
+  onProductTileSelect(product: Product) {
+    this.productSharedService.setSelectedproduct(product);
+  }
 }

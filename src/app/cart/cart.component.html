@@ -5,7 +5,7 @@
   <div class="table" flex>
     <div class="row" *ngFor="let product of products">
       <div class="cell cart-image-container">
-        <img src="{{product.image}}" alt="" srcset="">
+        <img src="{{product.image}}" [routerLink]="['/product']" (click)="onProductTileSelect(product)" alt="" srcset="">
       </div>
       <div class="cell">{{product.description}}</div>
       <div class="cell number">{{product.attributes.price}}</div>

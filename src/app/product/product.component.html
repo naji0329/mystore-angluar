@@ -4,7 +4,7 @@
   </div>
   <div fxLayout="row" fxLayoutAlign="space-between center">
     <div class="label" fxLayout="column" fxLayoutAlign="start start">
-      <div class="id">{{product.id}}</div>
+      <div appHighlight>{{product.id}}</div>
       <div class="description" [routerLink]="['/product']" (click)="onProductTileSelect(product)">{{product.name}}</div>
     </div>
     <div class="add-to-cart" fxLayout="row" fxLayoutAlign="center center">

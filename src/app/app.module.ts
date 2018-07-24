@@ -13,6 +13,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './cart/cart.component';
+import { HighlightDirective } from './common/highlight.directive';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { CartComponent } from './cart/cart.component';
     ProductsComponent,
     ProductComponent,
     ProductDetailComponent,
-    CartComponent
+    CartComponent,
+    HighlightDirective
   ],
   providers: [],
   bootstrap: [AppComponent],
