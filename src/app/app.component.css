@@ -16,6 +16,9 @@
 
 .app-toolbar .label {
   line-height: 48px;
+}
+
+.app-toolbar .label span {
   cursor: pointer;
   outline: none;
 }

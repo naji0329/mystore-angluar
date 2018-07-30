@@ -14,13 +14,19 @@ import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './cart/cart.component';
 import { HighlightDirective } from './common/highlight.directive';
+import { SessionTimerComponent } from './session-timer/session-timer.component';
+import { ExampleComponent } from './example/example.component';
+import { MomentModule }  from 'ngx-moment';
+import { ObservableComponent } from './example/observable/observable.component';
+import { StockComponent } from './example/stock/stock.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     RoutingModule,
     HttpModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MomentModule
   ],
   declarations: [
     AppComponent,
@@ -29,7 +35,11 @@ import { HighlightDirective } from './common/highlight.directive';
     ProductComponent,
     ProductDetailComponent,
     CartComponent,
-    HighlightDirective
+    HighlightDirective,
+    SessionTimerComponent,
+    ExampleComponent,
+    ObservableComponent,
+    StockComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

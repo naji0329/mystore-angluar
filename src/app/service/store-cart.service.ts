@@ -8,7 +8,7 @@ import * as _ from 'lodash';
 })
 export class StoreCartService {
   private CART_STORAGE_KEY: string = 'CART';
-  private productCount: number = 0;
+  productCount: number = 0;
 
   @Output() cartUpdate: EventEmitter<Product[]> = new EventEmitter();
 

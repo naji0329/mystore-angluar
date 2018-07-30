@@ -9,7 +9,7 @@ import { StoreCartService } from './service/store-cart.service';
 export class AppComponent {
   title = 'app';
 
-  constructor(private storeCartService: StoreCartService) {
+  constructor(public storeCartService: StoreCartService) {
     this.storeCartService = storeCartService;
   }
 }
