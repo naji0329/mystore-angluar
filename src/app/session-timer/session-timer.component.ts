@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SessionTimerService } from '../service/session-timer.service';
+import { LoginInterceptorService } from '../service/login-interceptor.service';
 
 @Component({
   selector: 'session-timer',
@@ -10,9 +11,11 @@ import { SessionTimerService } from '../service/session-timer.service';
 export class SessionTimerComponent implements OnInit {
   timer: Observable<Date>;
   time: Date;
-  constructor(public sessionTimerService: SessionTimerService) { }
+  loggedInTime: Date;
+  constructor(public sessionTimerService: SessionTimerService,private loginInterceptorService: LoginInterceptorService) { }
 
   ngOnInit() {
+    this.loggedInTime = this.loginInterceptorService.logInTime;
     this.sessionTimerService.intervalObserver.subscribe(x => {
       this.time = x;
     }, onError => { }, () => {

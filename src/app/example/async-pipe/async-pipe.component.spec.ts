@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ObservableComponent } from './observable.component';
+import { AsyncPipeComponent } from './async-pipe.component';
 
-describe('ObservableComponent', () => {
-  let component: ObservableComponent;
-  let fixture: ComponentFixture<ObservableComponent>;
+describe('AsyncPipeComponent', () => {
+  let component: AsyncPipeComponent;
+  let fixture: ComponentFixture<AsyncPipeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ObservableComponent ]
+      declarations: [ AsyncPipeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ObservableComponent);
+    fixture = TestBed.createComponent(AsyncPipeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

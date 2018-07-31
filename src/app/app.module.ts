@@ -17,8 +17,9 @@ import { HighlightDirective } from './common/highlight.directive';
 import { SessionTimerComponent } from './session-timer/session-timer.component';
 import { ExampleComponent } from './example/example.component';
 import { MomentModule }  from 'ngx-moment';
-import { ObservableComponent } from './example/observable/observable.component';
 import { StockComponent } from './example/stock/stock.component';
+import { SincePipe } from './pipes/since.pipe';
+import { AsyncPipeComponent } from './example/async-pipe/async-pipe.component';
 
 @NgModule({
   imports: [
@@ -38,8 +39,9 @@ import { StockComponent } from './example/stock/stock.component';
     HighlightDirective,
     SessionTimerComponent,
     ExampleComponent,
-    ObservableComponent,
-    StockComponent
+    StockComponent,
+    SincePipe,
+    AsyncPipeComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

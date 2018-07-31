@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { StoreCartService } from './service/store-cart.service';
+//import { LoginInterceptorService } from './service/login.interceptor.service';
 
 @Component({
   selector: 'app-root',
@@ -11,5 +12,6 @@ export class AppComponent {
 
   constructor(public storeCartService: StoreCartService) {
     this.storeCartService = storeCartService;
+    // loginInterceptorService.logInTime = new Date();
   }
 }

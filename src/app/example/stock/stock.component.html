@@ -1,8 +1,12 @@
 <div class="stock">
   <div fxLayout="row" fxLayoutAlign="space-between center">
     <div>Stock Detail</div>
-    <div (click)="subscribeTimer()" class="button">
+    <div (click)="subscribeStock()" class="button" *ngIf="stock === undefined">
       Subscribe
+    </div>
+
+    <div (click)="unsubscribeStock()" class="button danger" *ngIf="stock">
+      Unsubscribe
     </div>
   </div>
 

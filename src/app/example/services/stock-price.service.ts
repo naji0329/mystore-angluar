@@ -10,7 +10,7 @@ export class StockPriceService {
   constructor() {
     this.stockPriceObserver = Observable.create(observer => {
       setInterval(() => {
-        console.log('Pushing new data : ' + this.count++);
+        console.log('Cold Observable Pushing new data : ' + this.count++);
         observer.next(this.getNowStockPrice());
       }, 1000, { observer: observer });
 
