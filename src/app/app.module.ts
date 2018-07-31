@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home-component';
@@ -20,6 +21,11 @@ import { MomentModule }  from 'ngx-moment';
 import { StockComponent } from './example/stock/stock.component';
 import { SincePipe } from './pipes/since.pipe';
 import { AsyncPipeComponent } from './example/async-pipe/async-pipe.component';
+import { WriterComponent } from './example/components/writer/writer.component';
+import { ReaderComponent } from './example/components/reader/reader.component';
+import { CommunicationComponent } from './example/components/communication/communication.component';
+import { ToggleComponent } from './example/components/toggle/toggle.component';
+import { TogglecontainerComponent } from './example/components/togglecontainer/togglecontainer.component';
 
 @NgModule({
   imports: [
@@ -27,7 +33,9 @@ import { AsyncPipeComponent } from './example/async-pipe/async-pipe.component';
     RoutingModule,
     HttpModule,
     FlexLayoutModule,
-    MomentModule
+    MomentModule,
+    FormsModule,                               // <========== Add this line!
+    ReactiveFormsModule
   ],
   declarations: [
     AppComponent,
@@ -41,7 +49,12 @@ import { AsyncPipeComponent } from './example/async-pipe/async-pipe.component';
     ExampleComponent,
     StockComponent,
     SincePipe,
-    AsyncPipeComponent
+    AsyncPipeComponent,
+    WriterComponent,
+    ReaderComponent,
+    CommunicationComponent,
+    ToggleComponent,
+    TogglecontainerComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -6,8 +6,25 @@
         <stock></stock>
     </div>
   </div>
-</div>
+  <div style="text-align: center;">
+      Inter component communication
+      <div fxLayout="row">
+          <div>
+              Using component reference
+              <writer [reader]="readerComponent"></writer>
+              <reader #readerComponent></reader>
+          </div>
+          
+          <div>
+              Using component reference
+              <communication></communication>
+          </div>
+        </div>
+      </div>
+  </div>
+  
 
 <div>
   <async-pipe></async-pipe>
 </div>
+

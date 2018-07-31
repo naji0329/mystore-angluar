@@ -34,3 +34,14 @@ body {
     font-weight: bold;
     color: darkslategray;
   }
+
+  .button {
+    background-color: lightblue;
+    border-radius: 4px;
+    color: #0076AD;
+    cursor: pointer;
+    padding: 14px;
+  }
+  .button:hover {
+    background-color: cadetblue;
+  }
