@@ -4,6 +4,9 @@ import { HomeComponent } from './home/home-component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CartComponent } from './cart/cart.component';
 import { ExampleComponent } from './example/example.component';
+import { LegalComponent } from './legal/legal.component';
+import { CompAGaurd } from './legal/gaurd/compA.gaurd';
+import { CompADeactivateGaurd } from './legal/gaurd/compA.deactivate.gaurd';
 
 const routes: Routes = [
     {
@@ -17,6 +20,9 @@ const routes: Routes = [
     },
     {
         path: 'examples', component: ExampleComponent,
+    },
+    {
+        path: 'legal', component: LegalComponent, canActivate: [CompAGaurd], canDeactivate: [CompADeactivateGaurd]
     },
     {
         path: '',

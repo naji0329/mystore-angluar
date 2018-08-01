@@ -8,10 +8,9 @@ import { StockComponent } from './stock/stock.component';
   styleUrls: ['./example.component.css']
 })
 export class ExampleComponent implements OnInit {
-  
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }

@@ -9,13 +9,14 @@
       <img class="logo" src="assets/images/cart.png" [routerLink]="['/cart']">
       <div class="count">{{storeCartService.productCount}}</div>
     </div>
-
   </div>
   <div class="greet" fxLayout="row" fxLayoutAlign="space-between center">
     <div>
       <session-timer></session-timer>
     </div>
+    <img class="logo" src="assets/images/store.png" [routerLink]="['/legal']">
     <div>Welcome User</div>
+    
   </div>
   <router-outlet flex></router-outlet>
 </div>

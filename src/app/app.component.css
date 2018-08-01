@@ -7,7 +7,7 @@
   font-size: 30px;
 }
 
-.app-toolbar .logo {
+.logo {
   height: 48px;
   width: 48px;
   cursor: pointer;
@@ -40,4 +40,9 @@ products {
   top: 10px;
   font-size: 16px;
   color: black;
+}
+
+.link {
+  color: white;
+  cursor: pointer;
 }

@@ -29,6 +29,10 @@ import { TogglecontainerComponent } from './example/components/togglecontainer/t
 import { ParentCommComponent } from './example/components/parent-comm/parent-comm.component';
 import { ChildCommOneComponent } from './example/components/child-comm-one/child-comm-one.component';
 import { ChildCommTwoComponent } from './example/components/child-comm-two/child-comm-two.component';
+import { LifeCycleComponent } from './example/components/life-cycle/life-cycle.component';
+import { LegalComponent } from './legal/legal.component';
+import { CompAGaurd } from './legal/gaurd/compA.gaurd';
+import { CompADeactivateGaurd } from './legal/gaurd/compA.deactivate.gaurd';
 
 @NgModule({
   imports: [
@@ -60,9 +64,11 @@ import { ChildCommTwoComponent } from './example/components/child-comm-two/child
     TogglecontainerComponent,
     ParentCommComponent,
     ChildCommOneComponent,
-    ChildCommTwoComponent
+    ChildCommTwoComponent,
+    LifeCycleComponent,
+    LegalComponent
   ],
-  providers: [],
+  providers: [CompAGaurd, CompADeactivateGaurd],
   bootstrap: [AppComponent],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
