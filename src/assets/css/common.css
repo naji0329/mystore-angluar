@@ -36,12 +36,20 @@ body {
   }
 
   .button {
-    background-color: lightblue;
+    background-color: #0076AD;
     border-radius: 4px;
-    color: #0076AD;
+    color: white;
     cursor: pointer;
     padding: 14px;
   }
   .button:hover {
-    background-color: cadetblue;
+    background-color: #0048AD;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+  .title {
+    line-height: 32px;
+    font-weight: 500;
   }

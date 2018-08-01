@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { StockPriceService } from '../services/stock-price.service';
 
 @Component({
@@ -6,10 +6,7 @@ import { StockPriceService } from '../services/stock-price.service';
   templateUrl: './stock.component.html',
   styleUrls: ['./stock.component.css']
 })
-export class StockComponent implements OnInit, OnDestroy {
-  ngOnDestroy(): void {
-    this.stockSubscription.unsubscribe();
-  }
+export class StockComponent implements OnInit {
   stockPriceService: any;
   hotObservableService: any;
   stock: object;
@@ -29,9 +26,5 @@ export class StockComponent implements OnInit, OnDestroy {
     }, onError => { }, () => {
       console.log('Complete');
     });
-  }
-
-  public unsubscribeStock() {
-    this.stockSubscription.unsubscribe();
   }
 }

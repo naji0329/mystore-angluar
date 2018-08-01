@@ -20,7 +20,7 @@ export class WriterComponent implements OnInit {
   }
 
   onTextChange() {
-    this.reader.updateText(this.text);;
+    this.reader.updateText(this.text);
   }
 
 }

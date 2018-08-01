@@ -26,6 +26,9 @@ import { ReaderComponent } from './example/components/reader/reader.component';
 import { CommunicationComponent } from './example/components/communication/communication.component';
 import { ToggleComponent } from './example/components/toggle/toggle.component';
 import { TogglecontainerComponent } from './example/components/togglecontainer/togglecontainer.component';
+import { ParentCommComponent } from './example/components/parent-comm/parent-comm.component';
+import { ChildCommOneComponent } from './example/components/child-comm-one/child-comm-one.component';
+import { ChildCommTwoComponent } from './example/components/child-comm-two/child-comm-two.component';
 
 @NgModule({
   imports: [
@@ -54,7 +57,10 @@ import { TogglecontainerComponent } from './example/components/togglecontainer/t
     ReaderComponent,
     CommunicationComponent,
     ToggleComponent,
-    TogglecontainerComponent
+    TogglecontainerComponent,
+    ParentCommComponent,
+    ChildCommOneComponent,
+    ChildCommTwoComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
